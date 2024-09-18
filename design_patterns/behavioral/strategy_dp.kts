@@ -33,10 +33,10 @@ class DoSomethingContext {
 //Client
 fun main() {
     val inputStrategy = "First"
-    val strategyToExecute = 
+    val strategyContext = 
         if (inputStrategy == "First")
             DoSomethingContext().setDoSomethingStrategy(FirstStrategy())
         else
             DoSomethingContext().setDoSomethingStrategy(SecondStrategy())
-    strategyToExecute.doSomething()
+    strategyContext.doSomething()
 }
